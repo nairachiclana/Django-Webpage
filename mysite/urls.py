@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    #direcciones a los distintos modulos, dentro de cada uno defino sus vistas en sus urls.py
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+
 ]
